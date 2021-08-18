@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: wallet-epinstore-web-n02
+  jmx:
+    default-domain: ${spring.application.name}
+  profiles:
+    active: dev

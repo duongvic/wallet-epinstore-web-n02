@@ -1,0 +1,471 @@
+.panel-title {
+  padding-bottom: 3px !important
+}
+
+.tooltip-inner {
+  max-width: none
+}
+
+.multiselect-container .input-group {
+  width: 100%;
+  padding: 5px;
+  margin: 0
+}
+
+.form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
+  margin-left: -20px
+}
+
+.multiselect-container > li {
+  padding: 0 5px 0 5px
+}
+
+.multiselect-container {
+  width: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0 0 3px 0;
+  list-style-type: none
+}
+
+.nav-active {
+  color: #67A22C !important
+}
+
+.page-header-right {
+  margin: 6px 0 6px 15px !important
+}
+
+.breadcrumbs {
+  white-space: nowrap
+}
+
+.nano-content {
+  overflow-y: auto !important
+}
+
+html.no-overflowscrolling.custom-scroll .nano > .nano-content {
+  overflow: hidden;
+  overflow-y: auto
+}
+
+body .btn-success-green {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #38b449;
+  border-color: #38b449
+}
+
+body .btn-success-green:hover {
+  border-color: #38b449 !important;
+  background-color: #38b449
+}
+
+body .btn-success-green:active, body .btn-success-green:focus {
+  border-color: #2AAC3B !important;
+  background-color: #2aac3b
+}
+
+body .btn-success-green[disabled] {
+  border-color: #45af52 !important;
+  background-color: #45af52
+}
+
+.table > thead:first-child > tr:first-child > th {
+  background-color: #D2EBC3  !important
+}
+
+.not-role {
+  opacity: .5
+}
+
+.check_status {
+  background: #38b449 !important
+}
+
+.status_number {
+  font-family: 'Open Sans', sans-serif
+}
+
+.link-active {
+  color: #0088CC !important
+}
+
+.link-disactive {
+  color: black !important
+}
+
+.link-delete {
+  color: black !important
+}
+
+.col-number-header {
+  text-align: right
+}
+
+a i.fa-trash {
+  color: red
+}
+
+a i.fa-info-circle {
+  color: #7b7168
+}
+
+a i.fa-pencil {
+  color: #08c
+}
+
+.mr-xs-mini {
+  margin-right: 2px
+}
+
+.pl-none {
+  padding-left: 0
+}
+
+#menu .nav-children li.nav-active a {
+  color: #67a22c !important
+}
+
+#menu ul.nav-children > li > a {
+  text-overflow: clip !important;
+  white-space: normal !important
+}
+
+#menu li.nav-parent > a {
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+.sidebar-left-collapsed #menu li a {
+  text-overflow: clip
+}
+
+a.switchery-mask {
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  float: left;
+  z-index: 999;
+  width: 100%;
+  height: 100%
+}
+
+.switch {
+  position: relative !important
+}
+
+a {
+  cursor: pointer
+}
+
+.daterangepicker .ranges li {
+  color: #67a22c !important
+}
+
+.daterangepicker {
+  position: absolute;
+  color: inherit;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 1px;
+  top: 100px;
+  left: 20px
+}
+
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
+  padding: 0;
+  height: auto;
+  margin-bottom: 0
+}
+
+.ranges li:hover {
+  background-color: #A4BA29 !important;
+  border: 1px solid #A4BA29 !important;
+  color: #fff !important
+}
+
+.ranges li.active {
+  background-color: #A4BA29 !important;
+  border: 1px solid #A4BA29 !important;
+  color: #fff !important
+}
+
+.daterangepicker.ltr .calendar.left .calendar-table {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.daterangepicker.rtl .calendar.right .calendar-table {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.sprite-img-en {
+  background: url('theme-image-sprite.png') 0 -24px;
+  width: 23px;
+  height: 23px;
+  display: inline-block
+}
+
+.sprite-img-vn {
+  background: url('theme-image-sprite.png') -23px -24px;
+  width: 23px;
+  height: 23px;
+  display: inline-block
+}
+
+.sprite-img-user_login_36 {
+  background: url('theme-image-sprite.png') -46px -14px;
+  width: 36px;
+  height: 36px;
+  display: inline-block
+}
+
+.sprite-img-user_login_30 {
+  background: url('theme-image-sprite.png') -82px -20px;
+  width: 30px;
+  height: 30px;
+  display: inline-block
+}
+
+.sprite-img-sort_desc_disabled {
+  background: url('theme-image-sprite.png') -112px -31px;
+  width: 19px;
+  height: 19px
+}
+
+.sprite-img-sort_asc {
+  background: url('theme-image-sprite.png') -131px -31px;
+  width: 19px;
+  height: 19px
+}
+
+.sprite-img-sort_asc_disabled {
+  background: url('theme-image-sprite.png') -150px -31px;
+  width: 19px;
+  height: 19px
+}
+
+.sprite-img-sort_both {
+  background: url('theme-image-sprite.png') -169px -31px;
+  width: 19px;
+  height: 19px
+}
+
+.sprite-img-sort_desc {
+  background: url('theme-image-sprite.png') -188px -31px;
+  width: 19px;
+  height: 19px
+}
+
+.sprite-img-logo2x_150_50 {
+  background: url('theme-image-sprite.png') -207px -0px;
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 3px !important
+}
+
+.sprite-card-garena_100_40 {
+  background: url('sprite-img-card.png') 0 -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-gate_100_40 {
+  background: url('sprite-img-card.png') -100px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-gmobile_100_40 {
+  background: url('sprite-img-card.png') -200px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-mobifone_100_40 {
+  background: url('sprite-img-card.png') -300px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-oncash_100_40 {
+  background: url('sprite-img-card.png') -400px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-sfone_100_40 {
+  background: url('sprite-img-card.png') -500px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-vcoin_100_40 {
+  background: url('sprite-img-card.png') -600px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-viettel_100_40 {
+  background: url('sprite-img-card.png') -700px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-vnmobile_100_40 {
+  background: url('sprite-img-card.png') -800px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-vnphone_100_40 {
+  background: url('sprite-img-card.png') -900px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-zing_100_40 {
+  background: url('sprite-img-card.png') -1000px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-vinplay_100_40 {
+  background: url('sprite-img-card.png') -1100px -0px;
+  width: 100px;
+  height: 40px;
+  display: inline-block
+}
+
+.sprite-card-mbPhoneTPT_100_40 {
+  background: url('../images/logo/mbPhoneTPT.png');
+  width: 70px;
+  height: 40px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+
+.sprite-card-vnPhoneTPT_100_40 {
+  background: url('../images/logo/vnPhoneTPT.png');
+  width: 70px;
+  height: 40px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+
+.sprite-card-viettel3G_100_40 {
+  background: url('../images/logo/viettel_3G_100_40.png');
+  width: 40px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+
+.sprite-card-scoi_100_40 {
+  background: url('../images/logo/logo_scoin.png');
+  width: 70px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+
+.sprite-card-sohacoi_100_40 {
+  background: url('../images/logo/logo_sohacoin.png');
+  width: 40px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+
+.sprite-card-funcard_100_40 {
+  background: url('../images/logo/logo_funcard.png');
+  width: 40px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+.sprite-card-appota_100_40 {
+  background: url('../images/logo/logo_appota.png');
+  width: 200px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+.sprite-card-bit_100_40 {
+  background: url('../images/logo/logo_bit.png');
+  width: 80px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block
+}
+
+.header-title {
+  color: #33353f;
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 20px;
+  vertical-align: middle;
+  font-weight: 500;
+  PADDING: 0;
+  margin-left: 0
+}
+
+.height-line {
+  line-height: inherit !important
+}
+
+button, input[type=submit], input[type=reset], input[type=button] {
+  line-height: inherit !important
+}
+
+.select2-container.input-sm .select2-choice {
+  height: 34px !important
+}
+
+.date-rank {
+  margin-bottom: 9px
+}
+
+.bt-cancel {
+  height: 34px
+}
+
+.lh-inherit {
+  line-height: inherit !important
+}
+
+.show-group-card {
+  display: block
+}
+
+.hidden-group-card {
+  display: none
+}
+
+.dataTables_filter, .dataTables_length {
+  margin: 0 0 !important
+}
+
+div.dataTables_paginate {
+  float: right;
+  margin: 0
+}

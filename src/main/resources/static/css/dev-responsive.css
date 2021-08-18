@@ -1,0 +1,372 @@
+/* Dành cho điện thoại */
+@media all and (min-width: 320px) {
+
+}
+
+/* Dành cho máy tính bảng chiều dọc */
+@media all and (min-width: 600px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .main-content:before, .main-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+
+  .select2-container {
+    width: 123px;
+  }
+
+  div.form-control {
+    text-align: center;
+    height: 36px;
+    line-height: 21px;
+  }
+
+  .bt-export-rsp {
+    margin: 6px 0 !important;
+  }
+
+}
+
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) {
+
+}
+
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .table-responsive {
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /*border: 1px solid #ddd*/
+  }
+
+  .content-header {
+  }
+
+  .btn {
+    margin: 9px 0 4px;
+  }
+
+  .btn-group button {
+    width: 100%;
+    display: block;
+  }
+
+  .btn-group {
+    width: 100%;
+    /*margin: 0 0 4px;*/
+  }
+
+  .tab-content {
+    padding: 15px 0 15px 0;
+  }
+
+  .form-responsive {
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+  .content-header {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    margin-left: 35px;
+    margin-top: 40px;
+  }
+}
+
+/*tablet*/
+@media screen and (min-device-width: 600px) and (max-device-width: 736px) {
+  .el-first {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  li.mney {
+    background: #0c87f1;
+    height: 37px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-body-wrap {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .el-first {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .bt-responsive {
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+
+}
+
+@media only screen and (max-device-width: 480px) {
+
+}
+
+@media (max-width: 360px) {
+  div.form-control {
+    text-align: center;
+    margin-bottom: -6px;
+    height: 45px;
+  }
+}
+
+@media (max-device-width: 768px) {
+  .multiselect-container > ul {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px ) {
+  .multiselect-container {
+    width: 100%;
+  }
+
+  .select2-container {
+    width: 100% !important;
+  }
+
+  .bt-export-rsp {
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bt-export-rsp {
+    margin: 0 0 !important;
+  }
+
+  .bt-search {
+    margin: 0 0 !important;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  li.mney {
+    background: #0c87f1;
+    height: 38px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar-right {
+    float: right;
+    margin-right: 0;
+  }
+
+  .navbar-header {
+    float: left;
+    margin-left: 18px;
+  }
+
+  .bt-plt {
+    float: left !important;
+    margin-top: 0;
+    margin-bottom: 0
+  }
+}
+
+@media (min-device-width: 768px)and (max-device-width: 1366px) {
+
+}
+
+/* fix navbar */
+@media screen and (max-width: 900px) {
+  #customize-account-name-display {
+    display: none;
+  }
+
+  header.navbar .dropdown-menu.dropdown-menu-right:before {
+    left: auto;
+    right: 10px;
+  }
+
+  header.navbar .dropdown-menu.dropdown-menu-right {
+    left: auto !important;
+  }
+}
+
+.progress {
+  width: 100% !important;
+  height: 2px !important;
+  border-radius: 1px !important;
+  position: fixed;
+  z-index: 99999;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.progress .skill {
+  font: normal 12px "Open Sans Web";
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+
+  transition-duration: 400ms;
+}
+
+.progress-bar-loading {
+  background-color: #f58220;
+}
+
+/*----- Button Ripple-----*/
+button {
+
+  white-space: nowrap;
+  width: auto;
+  border: 0;
+  outline: 0;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+button .ripple {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.rippleJS {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: inherit;
+
+  /** Forces webkit to properly contain content within border-radius. */
+  /*-webkit-mask-image: -webkit-radial-gradient(circle, white, black);*/
+}
+
+/** adds default border-radius */
+.rippleJS.fill::after { /** allows webkit/blink to tap on corners */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+
+.rippleJS.fill {
+  border-radius: 1000000px; /** "large" number, but not 100% */
+}
+
+.rippleJS .ripple {
+  position: absolute;
+  border-radius: 100%;
+  background: currentColor;
+  opacity: 0.2;
+  width: 0;
+  height: 0;
+
+  /** only animate transform and opacity */
+  -webkit-transition: -webkit-transform 0.4s ease-out, opacity 0.4s ease-out;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+
+  /** initially hidden */
+  -webkit-transform: scale(0);
+  transform: scale(0);
+
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rippleJS .ripple.held {
+  opacity: 0.4;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.rippleJS .ripple.done {
+  opacity: 0.0;
+}
+.btn {
+  border-radius: 4px!important;
+}
+.bt-ripple {
+  margin-top: 6px;
+  white-space: nowrap;
+  width: auto;
+  border: 0;
+  outline: 0;
+  height: 36px;
+  position: relative;
+  color: white;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  vertical-align: bottom;
+  transition: box-shadow 0.25s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bt-ripple:focus {
+  outline: none;
+
+}
+
+a.rippleJS {
+  position: relative;
+}
+/*---end ---*/
+.margin-r3 {
+  margin-right: 3px;
+}

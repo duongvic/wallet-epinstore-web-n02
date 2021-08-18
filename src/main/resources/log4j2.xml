@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{ISO8601} | %-5p | ZTA | AppLog | @project.name@ | %X{X-B3-TraceId} | %t | %X{IPAddress} | %c{1}:%L | %m%n" />
+		</Console>
+		<RollingFile name="RollingFile" fileName="/opt/ewallet/logs/wallet-epinstore-web-n02.log" filePattern="/opt/ewallet/logs/wallet-epinstore-web-n02.log.%d{MM-dd-yyyy}-%i"
+			immediateFlush="false" append="true">
+			<PatternLayout
+				pattern="%d{ISO8601} | %-5p | ZTA | AppLog | @project.name@ | %X{X-B3-TraceId} | %t | %X{IPAddress} | %c{1}:%L | %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="2" modulate="true" />
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="RollingFile" />
+		</Root>
+	</Loggers>
+</Configuration>

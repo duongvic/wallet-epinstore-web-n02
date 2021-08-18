@@ -1,0 +1,22 @@
+172.16.4.41     id.zo-ta.com
+172.16.4.41		operation.zo-ta.com
+172.16.4.41		agent.zo-ta.com
+172.16.4.41		merchant.zo-ta.com
+
+#InternalGW
+172.16.4.41		internal-zuul-apigateway.zo-ta.com
+172.16.4.41    	external-zuul-apigateway.zo-ta.com
+
+172.16.4.41		internal-uaaservice-apigateway.zo-ta.com
+172.16.4.41		internal-merchantweb-apigateway.zo-ta.com
+172.16.4.41		internal-agentweb-apigateway.zo-ta.com
+
+#Brand 
+172.16.4.41     utils.zo-ta.com
+172.16.4.41 	esb.zo-ta.com
+172.16.4.41     brandname.zo-ta.com
+
+##Provider
+172.16.4.41     billgw.zo-ta.com
+172.16.4.41     api.billgw.zo-ta.com
+172.16.4.41     sandbox.billgw.zo-ta.com

@@ -1,0 +1,53 @@
+node{
+    stage('SCM Checkout'){
+    	git branch: 'staging', 
+		credentialsId: 'git-zta-infra-creds', 
+		url: 'https://infra_zota@bitbucket.org/ztaplatform/wallet-epinstore-web-n02.git'
+    }
+    
+    stage('Mavent Build and Complile'){
+        def mvnHome = tool name: 'maven_3_6_3', type: 'maven'
+        def mvnCMD = "${mvnHome}/bin/mvn"
+        def unzipCMD = "unzip -q target/wallet-epinstore-web-n02-1.0.0.war -d target/java-app"
+        def addHostsCMD ="cat hosts-stg > hosts"
+        
+        sh "${mvnCMD} clean package -DskipTests"
+        sh "${unzipCMD}"
+        sh "${addHostsCMD}"
+    }
+    
+    stage('Docker Build Image'){
+        sh 'docker build -t zopay/wallet-epinstore-web-n02-stg:1.0.0 --rm=true .'
+    }
+    
+    stage("Push Docker Image"){
+    	withCredentials([string(credentialsId: 'docker-hub-zopay-pwd', variable: 'dockerHubPwd')]) {
+    		sh "echo ${dockerHubPwd} | docker login --username zopay --password-stdin"
+		}
+		sh 'docker push zopay/wallet-epinstore-web-n02-stg:1.0.0'
+    }
+    
+    stage("Remove Old Container on Staging Server"){
+        try{
+            def dockrStop = "docker stop wallet-epinstore-web-n02"
+            def dockrRm = "docker rm -f wallet-epinstore-web-n02"
+            def dockrRmImage = "docker rmi  zopay/wallet-epinstore-web-n02-stg:1.0.0"
+            
+            sh "${dockrStop}"
+            sh "${dockrRm}"
+            sh "${dockrRmImage}"
+        }catch(e){
+             echo "container wallet-epinstore-web-n02-stg not found or runing" 
+        }
+        
+    }
+    
+    stage("Run Container on Staging Server"){
+        def dockrRun ='docker run -d -p 12141:12141 --network "host" --name "wallet-epinstore-web-n02" \
+            -v /opt/ewallet:/opt/ewallet \
+			-e SPRING_PROFILES_ACTIVE="stg" \
+			-e JAVA_OPTS="-Xms1024m -Xmx2048m -Xmn256m -XX:SurvivorRatio=8" \
+			zopay/wallet-epinstore-web-n02-stg:1.0.0'
+        sh "${dockrRun}"
+    }
+}

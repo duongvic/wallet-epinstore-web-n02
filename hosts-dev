@@ -1,0 +1,6 @@
+10.0.0.12	internal-zuul-apigateway.zo-ta.com
+10.0.0.12	external-zuul-apigateway.zo-ta.com
+
+10.0.0.12	internal-uaaservice-apigateway.zo-ta.com
+10.0.0.12	internal-merchantweb-apigateway.zo-ta.com
+10.0.0.12	internal-agentweb-apigateway.zo-ta.com

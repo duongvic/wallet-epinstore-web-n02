@@ -1,0 +1,52 @@
+server:
+  port: 12141
+  context-path: /store-n02
+  connection-timeout: 50000
+  session:
+    timeout: 3600
+# The maximum number of request processing threads 
+  tomcat:
+    max-threads: 250
+# The maximum number of connections that the server will accept and process at any given time.
+    max-connections: 10000
+
+## =====================================================
+uaa:
+  server: http://127.0.0.1:9999
+
+security:
+  oauth2:
+    client:
+      client-id: clientapp
+      client-secret: 123456
+      access-token-uri: ${uaa.server}/oauth/token
+      user-authorization-uri: ${uaa.server}/oauth/authorize
+      scope: read, write
+    resource:
+      user-info-uri: ${uaa.server}/user/me       
+      jwt:
+        keyValue: |
+          -----BEGIN PUBLIC KEY-----
+          MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCPAJI9rEDQHwwJrNl8eKZcVZVC
+          GGDEmrArSGkBGvb9grICazOVcME0a1D63Oreyzxnh6ViphecHJJsJm+D9d6VYVbF
+          afy6jAq0hJdAHA47J3YC0DL5vfE+sD8Esqg0BaR5wyKDdQFL5AbQmjHRib+wSJws
+          MgYHJmj+Sa7LRo6vlQIDAQAB
+          -----END PUBLIC KEY-----    
+
+## =====================================================
+spring:
+  http:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+    
+## =====================================================  
+logging:
+  level:
+    org.springframework.security: INFO
+    org.springframework.cloud: ERROR
+    org.springframework.amqp: ERROR
+    org.springframework.web: INFO
+    com.netflix.discovery: ERROR

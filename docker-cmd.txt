@@ -1,0 +1,28 @@
+mvn clean package -DskipTests
+unzip -q target/wallet-epinstore-web-n02-1.0.0.war -d target/java-app
+
+docker ps -a
+
+docker stop wallet-epinstore-web-n02
+
+docker rm -f wallet-epinstore-web-n02
+
+docker images -a | grep "wallet-epinstore-web-n02" | awk '{print $3}' | xargs docker rmi
+
+docker build -t zopay/wallet-epinstore-web-n02:1.0.0 --rm=true .
+
+docker run -d -p 12141:12141 --network "host" --name "wallet-epinstore-web-n02" \
+-e "SPRING_PROFILES_ACTIVE=local" \
+-e JAVA_OPTS="-Xms1024m -Xmx2048m -Xmn256m -XX:SurvivorRatio=8" \
+zopay/wallet-epinstore-web-n02:1.0.0
+
+docker logs wallet-epinstore-web-n02
+
+docker inspect wallet-epinstore-web-n02
+
+
+docker run -d -p 12141:12141 --network "host" --name "wallet-epinstore-web-n02" \
+-v /opt/ewallet:/opt/ewallet \
+-e "SPRING_PROFILES_ACTIVE=local" \
+-e JAVA_OPTS="-Xms1024m -Xmx2048m -Xmn256m -XX:SurvivorRatio=8" \
+zopay/wallet-epinstore-web-n02:1.0.0

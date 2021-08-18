@@ -1,0 +1,29 @@
+.m-s-mr {
+	padding-left: 15px;
+	padding-right: 0px;
+	margin-top: 15px;
+}
+
+.sidebar-left .s-h-h {
+	height: auto !important;
+}
+
+.w-b-l {
+	width: 160px;
+}
+
+.s-u-n {
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.m-s-btn{
+	margin-left: 20px;
+}
+
+.number-column-header {
+	text-align:right;
+}

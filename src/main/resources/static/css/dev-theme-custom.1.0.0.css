@@ -1,0 +1,441 @@
+/* Add here all your CSS customizations */
+
+/* ---------------------------------------------common---------------------------------------- */
+.panel-title {
+  padding-bottom: 3px !important;
+}
+
+/* ---------------------------------------------thanh menu------------------------------------*/
+.tooltip-inner {
+  max-width: none;
+}
+
+/* ---------------------------------------------css select2------------------------------------ */
+.multiselect-container .input-group {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+}
+
+.form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
+  margin-left: -20px;
+}
+
+.multiselect-container > li {
+  padding: 0 5px 0 5px;
+}
+
+.multiselect-container {
+  width: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0 0 3px 0;
+  list-style-type: none;
+}
+
+/* ---------------------------------------------navigation-------------------------------------- */
+.nav-active {
+  color: #F58220 !important;
+}
+
+.page-header-right {
+  margin: 6px 0 6px 15px !important;
+}
+
+.breadcrumbs {
+  white-space: nowrap;
+}
+
+.nano-content {
+  overflow-y: auto !important;
+}
+
+html.no-overflowscrolling.custom-scroll .nano > .nano-content {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* ---------------------------------------------button-------------------------------------- */
+body .btn-success-green {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #38b449;
+  border-color: #38b449;
+}
+
+body .btn-success-green:hover {
+  border-color: #38b449 !important;
+  background-color: #38b449;
+}
+
+body .btn-success-green:active, body .btn-success-green:focus {
+  border-color: #2AAC3B !important;
+  background-color: #2AAC3B;
+}
+
+body .btn-success-green[disabled] {
+  border-color: #45af52 !important;
+  background-color: #45af52;
+}
+
+/* ---------------------------------------------table--------------------------------- */
+.table > thead:first-child > tr:first-child > th {
+  background-color: #f5efea !important;
+}
+
+.not-role {
+  opacity: 0.5;
+}
+
+/* ---------------------------------------------table -- stage--------------------------- */
+.check_status {
+  background: #38b449 !important;
+}
+
+.status_number {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* --------------------------------------------table --link click----------------------- */
+.link-active {
+  color: #0088CC !important;
+}
+
+.link-disactive {
+  color: black !important;
+}
+
+.link-delete {
+  color: black !important;
+}
+
+.col-number-header {
+  text-align: right;
+  /*vertical-align: middle !important;*/
+}
+
+a i.fa-trash {
+  color: red;
+}
+
+a i.fa-info-circle {
+  color: #7b7168;
+}
+
+a i.fa-pencil {
+  color: #0088CC
+}
+
+/* ------------------------------------------padding & margin------------------ */
+.mr-xs-mini {
+  margin-right: 2px;
+}
+
+.pl-none {
+  padding-left: 0;
+}
+
+/* ------------------------------------------modal--------------------------------- */
+
+/* ------------------------------------------MENU--------------------------------- */
+
+#menu .nav-children li.nav-active a {
+  color: #F58220 !important;
+}
+
+#menu ul.nav-children > li > a {
+  text-overflow: clip !important;
+  white-space: normal !important;
+}
+
+#menu li.nav-parent > a {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sidebar-left-collapsed #menu li a {
+  text-overflow: clip;
+}
+
+/* ---------------------------------------switchery----------------    */
+
+a.switchery-mask {
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  float: left;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+}
+
+.switch {
+  position: relative !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*--------------------daterange picker-------------------*/
+.daterangepicker .ranges li {
+  color: #F58220 !important
+}
+
+.daterangepicker {
+  position: absolute;
+  color: inherit;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 1px;
+  top: 100px;
+  left: 20px
+}
+
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
+  padding: 0;
+  height: auto;
+  margin-bottom: 0
+}
+
+.ranges li:hover {
+  background-color: #F58220 !important;
+  border: 1px solid #F58220 !important;
+  color: #fff !important
+}
+
+.ranges li.active {
+  background-color: #F58220 !important;
+  border: 1px solid #F58220 !important;
+  color: #fff !important
+}
+
+.daterangepicker.ltr .calendar.left .calendar-table {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.daterangepicker.rtl .calendar.right .calendar-table {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+/* ------------------------------------------css sprite--------------------------------- */
+.sprite-img-en {
+  background: url('theme-image-sprite.png') 0 -24px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+}
+
+.sprite-img-vn {
+  background: url('theme-image-sprite.png') -23px -24px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+}
+
+.sprite-img-user_login_36 {
+  background: url('theme-image-sprite.png') -46px -14px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+.sprite-img-user_login_30 {
+  background: url('theme-image-sprite.png') -82px -20px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.sprite-img-sort_desc_disabled {
+  background: url('theme-image-sprite.png') -112px -31px;
+  width: 19px;
+  height: 19px;
+}
+
+.sprite-img-sort_asc {
+  background: url('theme-image-sprite.png') -131px -31px;
+  width: 19px;
+  height: 19px;
+}
+
+.sprite-img-sort_asc_disabled {
+  background: url('theme-image-sprite.png') -150px -31px;
+  width: 19px;
+  height: 19px;
+}
+
+.sprite-img-sort_both {
+  background: url('theme-image-sprite.png') -169px -31px;
+  width: 19px;
+  height: 19px;
+}
+
+.sprite-img-sort_desc {
+  background: url('theme-image-sprite.png') -188px -31px;
+  width: 19px;
+  height: 19px;
+}
+
+.sprite-img-logo2x_150_50 {
+  background: url('theme-image-sprite.png') -207px -0px;
+  width: 150px;
+  height: 50px;display:inline-block;margin-left: 3px !important;
+}
+
+/*   --------------card iamge-----------------  */
+
+.sprite-card-garena_100_40 {
+  background: url('sprite-img-card.png') 0 -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-gate_100_40 {
+  background: url('sprite-img-card.png') -100px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-gmobile_100_40 {
+  background: url('sprite-img-card.png') -200px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-mobifone_100_40 {
+  background: url('sprite-img-card.png') -300px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-oncash_100_40 {
+  background: url('sprite-img-card.png') -400px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-sfone_100_40 {
+  background: url('sprite-img-card.png') -500px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-vcoin_100_40 {
+  background: url('sprite-img-card.png') -600px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-viettel_100_40 {
+  background: url('sprite-img-card.png') -700px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-vnmobile_100_40 {
+  background: url('sprite-img-card.png') -800px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-vnphone_100_40 {
+  background: url('sprite-img-card.png') -900px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-zing_100_40 {
+  background: url('sprite-img-card.png') -1000px -0;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.sprite-card-vinplay_100_40 {
+  background: url('sprite-img-card.png') -1100px -0px;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+/* ------------------------------------------else--------------------------------- */
+
+.header-title {
+  color: #33353f;
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 20px;
+  vertical-align: middle;
+  font-weight: 500;
+  PADDING: 0;
+  margin-left: 0;
+}
+
+.height-line {
+  line-height: inherit !important;
+}
+
+button, input[type=submit], input[type=reset], input[type=button] {
+  line-height: inherit !important;
+}
+
+.select2-container.input-sm .select2-choice {
+  height: 34px !important;
+}
+
+.date-rank {
+  margin-bottom: 9px;
+}
+
+.bt-cancel {
+  height: 34px;
+}
+
+/* Tooltip */
+/*
+.tooltip > .tooltip-inner {
+  min-width: 100px;
+  max-width: 100%;
+  !*background-color: #73AD21;*!
+  color: #FFFFFF;
+  !*border: 1px solid green;*!
+  padding: 3px;
+  font-size: 14px;
+}
+!* Tooltip on top *!
+.tooltip.top > .tooltip-arrow {
+  border-top: 5px solid!* green*!;
+}
+!* Tooltip on bottom *!
+.tooltip.bottom > .tooltip-arrow {
+  border-bottom: 5px solid!* green*!;
+}
+!* Tooltip on left *!
+.tooltip.left > .tooltip-arrow {
+  border-left: 5px solid!* green*!;
+}
+!* Tooltip on right *!
+.tooltip.right > .tooltip-arrow {
+  border-right: 5px solid!* green*!;
+}*/
+.lh-inherit {
+  line-height: inherit !important;
+}
